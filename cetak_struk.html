@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struk Pembelian</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="receipt">
+
+<h1>Toko Baju Anjania</h1>
+
+<p>No. Transaksi : <span id="no">AJ-00001</span></p>
+
+<p>Tanggal : <span id="tanggal"></span></p>
+
+<hr>
+
+<img src="images/baju1.jpg" width="150">
+
+<h2>Kaos Oversize</h2>
+
+<p>Kategori : Kaos</p>
+
+<p>Bahan : Cotton Combed</p>
+
+<p>Jumlah : 2</p>
+
+<p>Harga : Rp150.000</p>
+
+<hr>
+
+<h2>Total : Rp300.000</h2>
+
+<p style="color:green">
+✔ Pembayaran Berhasil
+</p>
+
+<button onclick="window.print()">
+Cetak Struk
+</button>
+
+<a href="produk.html">
+<button>Belanja Lagi</button>
+</a>
+
+</div>
+
+<script>
+
+document.getElementById("tanggal").innerHTML =
+new Date().toLocaleString("id-ID");
+
+</script>
+
+</body>
+</html>
