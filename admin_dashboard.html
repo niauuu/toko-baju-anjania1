@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>Dashboard Admin</h1>
+
+<div class="card">
+    <h3>Total Produk</h3>
+    <h2>20</h2>
+</div>
+
+<div class="card">
+    <h3>Total Transaksi</h3>
+    <h2>15</h2>
+</div>
+
+<div class="card">
+    <h3>Pendapatan</h3>
+    <h2>Rp2.500.000</h2>
+</div>
+
+<div class="card">
+    <h3>Stok Menipis</h3>
+    <h2>3</h2>
+</div>
+
+<canvas id="chart"></canvas>
+
+<script>
+new Chart(document.getElementById("chart"),{
+    type:"bar",
+    data:{
+        labels:["Sen","Sel","Rab","Kam","Jum","Sab","Min"],
+        datasets:[{
+            label:"Transaksi",
+            data:[4,6,3,8,2,5,7]
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
